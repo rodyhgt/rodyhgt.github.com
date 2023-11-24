@@ -1,0 +1,163 @@
+
+/* 
+color: #A67D03
+color: #BF9E60
+color: #734002
+color: #F2A74B
+color: #0D0D0D 
+*/
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #d500f9;
+}
+
+img{
+    max-width: 100%;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container{
+    background: #BA8B02;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    max-width: 960px;
+    width: 100%;
+    height: 80vh; /*vh es el tamaño de la pantalla, 80 seria el porcentaje*/
+    background-color: #ffffff;
+    /*box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 4px;
+    position: relative;
+    
+    overflow: scroll;
+}
+
+.content{
+    padding: 1em;
+}
+
+td{
+    display: block;
+    width: 100%;
+}
+
+td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #642B73;
+}
+
+th{
+    display: none;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #642B73;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+.fa-star{
+    color: #ffc400;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+
+/*Pseudoclase*/
+.table tr:nth-child(even){background-color: #f3e5f5;}
+
+.title-item{
+    font-size: 2em;
+    border-bottom: solid 2px #c6426e;
+    padding-bottom: 1em;
+}
+
+.address{
+    font-weight: bold;
+    color: #642B73;
+    font-size: 1.2em;
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 180px;
+}
+.position{
+    background-color: #c6426e;
+    color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+    position: 0.5em;
+}
+
+/*Estas mediasquery estan diseñadas para pantallas grandes, las originales
+para pantallas chicas(cel)*/
+@media(min-width:900px){
+    th{
+        display: table-cell;
+    }
+    td{
+        width: auto;
+        display: table-cell;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+    .content{
+        padding: 1.8em;
+    }
+}
+
+@media (min-width:550px){
+    .content{
+        height: 500px;
+    }
+}
