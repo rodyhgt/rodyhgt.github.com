@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e034139da1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="menu container">
             <!-- <a href="#" class="logo">Logo</a> -->
             <img src="/img/logo.png" alt="" class="logo1">
@@ -15,12 +16,12 @@
             <label for="menu">
                 <img src="img/menu.png" alt="menu">
             </label>
-            <nav class="navbar">
+            <nav class="navbar" id="inicio">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#header">Inicio</a></li>
+                    <!-- <li><a href="#">Servicios</a></li> -->
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#footer">Contacto</a></li>
                 </ul>
             </nav>
             <div>
@@ -53,22 +54,41 @@
                     Queremos equiparte para la mejor experiencia de esta hermosa costumbre, 4 años nos avalan.
                 </p>
                 <h2>¡UN MATE ÚNICO COMO VOS!</h2>
-                <div class="buttons">
+                <!-- <div class="buttons">
                     <a href="#" class="btn-1">Informacion</a>
                     <a href="#" class="btn-1">Leer mas</a>
-                </div>
+                </div> -->
             </div>
             <div class="header-img">
                 <img src="img/portada1.jpg" alt="">
             </div>
         </div>
     </header>
-
+    <div class="nosotros">
+        <h3>Sobre Nosotros</h3>
+        <p class="nosotros-txt">
+            ¡Descubre la magia de los mates artesanales en nuestra tienda!
+            Explora una amplia variedad de mates únicos, elaborados a mano por nuestro equipo.
+            Desde mates tradicionales hasta diseños modernos y creativos, nuestra colección ofrece opciones para todos los gustos.
+            Cada mate cuenta una historia de habilidad y creatividad, y es el compañero perfecto para disfrutar de tus momentos favoritos.
+            Además, también encontrarás accesorios complementarios, como bombillas y termos, para completar tu experiencia.
+            Sumérgete en el mundo del mate artesanal y encuentra la pieza perfecta para ti o el regalo ideal para tus seres queridos.
+        </p>
+    </div>
+    
+    <div class="destacados">
+        <h2 class="productos-destacados">Ofertas Destacadas</h2>
+    </div>
+        
     <section class="oferts container">
         <div class="ofert-1 b1">
             <div class="ofert-txt">
-                <h3>Lorem, ipsum dolor.</h3>
-                <a href="#">Leer mas</a>
+                <h3>Mate imperial virola alpaca lisa</h3>
+                <p class="premium">Calidad premium</p>
+                <p class="precio" id="precio-destacado">Antes $42500</p>
+                <p class="precio-ahora">Ahora $36000</p>
+                <!-- <a href="#" class="agregar-carrito btn-4" data-id="100">Agregar al carrito</a> -->
+                <!-- <a href="#">Leer mas</a> -->
             </div>
             <div class="ofert-img">
                 <img src="img/7-1.jpg" alt="">
@@ -77,8 +97,12 @@
 
         <div class="ofert-1 b2">
             <div class="ofert-txt">
-                <h3>Lorem, ipsum dolor.</h3>
-                <a href="#">Leer mas</a>
+                <h3>Mate imperial virola alpaca cincelada</h3>
+                <p class="premium">Calidad premium</p>
+                <p class="precio" id="precio-destacado">Antes $52500</p>
+                <p class="precio-ahora">Ahora $40000</p>
+                <!-- <a href="#" class="agregar-carrito btn-4" data-id="101">Agregar al carrito</a> -->
+                <!-- <a href="#">Leer mas</a> -->
             </div>
             <div class="ofert-img">
                 <img src="img/Mate-12.webp" alt="">
@@ -87,16 +111,20 @@
 
         <div class="ofert-1 b3">
             <div class="ofert-txt">
-                <h3>Lorem, ipsum dolor.</h3>
-                <a href="#">Leer mas</a>
+                <h3>Mate imperial virola alpaca lisa</h3>
+                <p class="premium">Calidad premium</p>
+                <p class="precio" id="precio-destacado">Antes $42500</p>
+                <p class="precio-ahora">Ahora $36000</p>
+                <!-- <a href="#" class="agregar-carrito btn-4" data-id="101">Agregar al carrito</a> -->
+                <!-- <a href="#">Leer mas</a> -->
             </div>
             <div class="ofert-img">
-                <img src="img/camionero-virla-cincelada-negro.webp" alt="">
+                <img src="/img/10-imperial-premium-virola-alpaca-lisa.webp" alt="">
             </div>
         </div>
     </section>
 
-    <main class="products container">
+    <main class="products container" id="productos">
         <h2>Productos</h2>
 
         <div class="box-container" id="lista-1">
@@ -106,7 +134,7 @@
                 <div class="product-txt">
                     <h3>Camionero</h3>
                     <p>Calidad premium</p>
-                    <p class="precio">$4000</p>
+                    <p class="precio">$30000</p>
                     <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
                 </div>
             </div>
@@ -115,7 +143,7 @@
                 <div class="product-txt">
                     <h3>Imperial Base Aluminio</h3>
                     <p>Calidad premium</p>
-                    <p class="precio">$7000</p>
+                    <p class="precio">$45000</p>
                     <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
                 </div>
             </div>
@@ -124,7 +152,7 @@
                 <div class="product-txt">
                     <h3>Imperial con fleje</h3>
                     <p>Calidad premium</p>
-                    <p class="precio">$7000</p>
+                    <p class="precio">$35000</p>
                     <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
                 </div>
             </div>
@@ -209,74 +237,77 @@
                     <a href="#" class="agregar-carrito btn-3" data-id="12">Agregar al carrito</a>
                 </div>
             </div>
+            <div class="box">
+                <img src="img/7-1.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Imperial premium</h3>
+                    <p>Mate imperial virola alpaca lisa</p>
+                    <p class="precio">$32000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="13">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/Mate-12.webp" alt="">
+                <div class="product-txt">
+                    <h3>Imperial premium</h3>
+                    <p>Mate imperial virola alpaca lisa</p>
+                    <p class="precio">$36000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="14">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/pico-del-rey-alpaca.webp" alt="">
+                <div class="product-txt">
+                    <h3>Bombilla Pico del Rey</h3>
+                    <p>Bombilla pico del rey alpaca</p>
+                    <p class="precio">$225000</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="15">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/pico-loro-acero.webp" alt="">
+                <div class="product-txt">
+                    <h3>Bombilla Pico Loro</h3>
+                    <p>Bombilla pico loro de acero</p>
+                    <p class="precio">$2500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="16">Agregar al carrito</a>
+                </div>
+            </div>
+            
         </div>
 
         <div class="btn-2" id="load-more">Cargar Mas</div>
     </main>
 
-    <section class="testimonial container">
-        <span>Testimoniales</span>
-        <h2>Que opinan nuestros clientes</h2>
-        <div class="testimonial-content">
-            <div class="testimonial-1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Illo quibusdam aliquam harum quo voluptas exercitationem 
-                    libero mollitia a necessitatibus veniam.
-                </p>
-                <img src="img/starts.png" alt="">
-                <h4>Lorem ipsum</h4>
-            </div>
-        </div>
-        <div class="testimonial-content">
-            <div class="testimonial-1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Illo quibusdam aliquam harum quo voluptas exercitationem 
-                    libero mollitia a necessitatibus veniam.
-                </p>
-                <img src="img/starts.png" alt="">
-                <h4>Lorem ipsum 2</h4>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-content container">
             <div class="link">
                 <h3>Tienda</h3>
                 <ul>
-                    <li><a href="#">Politica de cookies</a></li>
-                    <li><a href="#">Politica de privacidad</a></li>
-                    <li><a href="#">Medios de Pago</a></li>
-                    <li><a href="#">Envios a domicilio</a></li>
+                    <li><a href="/envios.html"> <i class="fa-solid fa-truck-fast"></i>Envios a domicilio</a></li>
+                    <li><a href="#"><i class="fa-solid fa-credit-card"></i> Medios de Pago</a></li>
+                    <!-- <li><a href="#">Politica de cookies</a></li>
+                    <li><a href="#">Politica de privacidad</a></li> -->
                 </ul>
             </div>
             <div class="link">
                 <h3>Nuestras Redes</h3>
                 <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
-            </div>
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
+                    <li><a href="https://www.instagram.com/mates.elcamino/"></li><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <li><a href="https://www.facebook.com/MatesUruguayosElCamino"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
                 </ul>
             </div>
             <div class="link">
                 <h3>Informacion de la Tienda</h3>
                 <ul>
-                    <li><a href="#">Caseros 276, Salta Argentina</a></li>
-                    <li><a href="#">Whatsapp: +54 9 387 510-4703</a></li>
-                    <li><a href="#">mateselcamino@gmail.com</a></li>
-                    <li><a href="#">lorem</a></li>
+                    <li><a href="https://maps.app.goo.gl/WHUpzC4fYP3j3FJM7"><i class="fa-sharp fa-solid fa-location-dot"></i> Caseros 276, Salta Argentina</a></li>
+                    <li><a href="https://wa.me/5493875104703"><i class="fa-brands fa-whatsapp"></i> Whatsapp: +54 9 387 510-4703</a></li>
+                    <li><a href="mailto:mateselcamino@gamil.com?subjet=El asunto&body=Mensaje"><i class="fa-solid fa-envelope"></i> mateselcamino@gmail.com</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="copy">
+            <p class="copy">© 2023 Mates El Camino.</p>
         </div>
     </footer>
 
